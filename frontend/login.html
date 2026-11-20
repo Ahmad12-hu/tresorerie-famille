@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Trésorière Familiale</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h2>💰 Trésorière Familiale</h2>
+    </div>
+    <a href="index.html" class="btn btn-outline">Retour à l'accueil</a>
+  </nav>
+
+  <div class="container">
+    <div class="auth-form">
+      <div class="auth-tabs">
+        <button class="tab active" onclick="switchTab('connexion')">Connexion</button>
+        <button class="tab" onclick="switchTab('inscription')">Créer un compte</button>
+      </div>
+
+      <!-- Formulaire de connexion -->
+      <div class="tab-panel active" id="panel-connexion">
+        <h2>Connexion</h2>
+        <form id="form-connexion">
+          <div class="form-group">
+            <label for="email-connexion">Email</label>
+            <input type="email" id="email-connexion" required placeholder="vous@email.com">
+          </div>
+          <div class="form-group">
+            <label for="mot-de-passe-connexion">Mot de passe</label>
+            <input type="password" id="mot-de-passe-connexion" required placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Se connecter</button>
+        </form>
+        <p class="auth-footer">Pas encore de compte ? <a href="#" onclick="switchTab('inscription')">Créez-en un</a></p>
+      </div>
+
+      <!-- Formulaire d'inscription -->
+      <div class="tab-panel" id="panel-inscription">
+        <h2>Créer un compte</h2>
+        <form id="form-inscription">
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" required placeholder="Dupont">
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" required placeholder="Jean">
+          </div>
+          <div class="form-group">
+            <label for="email-inscription">Email</label>
+            <input type="email" id="email-inscription" required placeholder="vous@email.com">
+          </div>
+          <div class="form-group">
+            <label for="mot-de-passe-inscription">Mot de passe</label>
+            <input type="password" id="mot-de-passe-inscription" required placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Créer mon compte</button>
+        </form>
+        <p class="auth-footer">Déjà un compte ? <a href="#" onclick="switchTab('connexion')">Connectez-vous</a></p>
+      </div>
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
