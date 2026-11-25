@@ -84,4 +84,4 @@ Ce projet est fait pour votre famille. N'hésitez pas à l'adapter selon vos bes
 
 ---
 
-*Fait avec ❤️ pour la famille*
+*Fait avec Amadou ka pour la famille*
